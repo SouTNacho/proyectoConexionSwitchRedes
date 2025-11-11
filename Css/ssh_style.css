@@ -1,0 +1,225 @@
+/* ===== ESTILO GENERAL ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f5f7fa, #dbeafe);
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+/* ===== ESTILO HEAD ===== */
+.head {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #00a8e8, #0284c7);
+    border-bottom: 3px solid #6B7280;
+}
+
+.btn-inicio {
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+    background: #c0c2c7;
+    cursor: pointer;
+    transition: 500ms;
+    border: 3px solid #6B7280;
+}
+
+.btn-inicio:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background: #38bdf8;
+    transition: 500ms;
+    border: 3px solid #fff;
+}
+
+.btn-inicio-link {
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-inicio-link:hover {
+    color: #fff;
+}
+
+/* ===== ESTILO MAIN ===== */
+
+.main {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                      url("../Src/redes.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===== ESTILO FORMULARIOS ===== */
+
+form {
+    width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 18px;
+    background: #00a8e8;
+    padding: 30px 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 500ms;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    transition: 500ms;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    font-size: 1.4rem;
+}
+
+label {
+    visibility: hidden;
+}
+
+.form-input, select.form-input {
+    width: 85%;
+    border: none;
+    border-style: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 0.95rem;
+    background-color: #f1f5f9;
+    color: #111827;
+}
+
+select.form-input {
+    cursor: pointer;
+    appearance: none;
+}
+
+/* ===== BOTONES DE FORMULARIO ===== */
+
+input[type="submit"] {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: 1px solid #6B7280ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #c0c2c7;
+    color: #1a1a1a;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 500ms;
+    font-size: 0.9rem;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    background: #38bdf8;
+    color: #fff;
+    transition: 500ms;
+    border: 1px solid #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.resultado-conter {
+    background: linear-gradient(135deg, #00a8e8, #0284c7);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ffffff;
+    max-width: 420px;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.resultado-conter h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.resultado-conter p {
+    margin: 10px 0;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== MENSAJES ===== */
+
+.error-message {
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+.switch-info {
+    color: #ffffff;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+/* ===== BOTÓN DE ACCESO ===== */
+
+.btn-acceso {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #c0c2c7;
+    color: #1a1a1a;
+    transition: 500ms;
+    font-size: 0.9rem;
+}
+
+.btn-acceso:hover {
+    transform: scale(1.07);
+    background: #38bdf8;
+    color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 168, 232, 0.5);
+    transition: 500ms;
+}
